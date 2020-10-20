@@ -1,59 +1,111 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta name="description" content="Code Today is the website has to improve the skill of coding in many program language" >
-    <title s>CODE TODAY🔥🔥</title>
+    <title>CODETODAY</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link  rel="icon" href="photo\global_icon_129036.ico">
 </head>
-<style>
-   hr {
-       border-color: brown;
-       border-style: solid;
-       border-width: 5px;
-       background-color: blanchedalmond;
-       height: 20px;
-       margin-left: 20%;
-   }
-   h1 {
-       background-color:rgb(99, 180, 153);
-       border-width: 5px;
-       border-radius: 5px;
-       border-style: solid;
-       border-color: blanchedalmond;
-       margin-right: 30%;
-   }
-   img {
-       border-style: none;
-       border-bottom-style: solid;
-       border-bottom-width: 20px;
-       border-radius: 30px;
-       border-width: 21px;
-       border-color: blue;
-       margin-left: 50%;
-       margin-right: 50%;
-   }
 
-</style>
 <body>
-    <hr  >
-    <h1 >My Heading</h1>
-    <hr>
-    <h1> My document</h1>
-    <hr>
-    <p>Code Today is the website has to <em> <strong>skill of coding in many program language</strong> </em> </p>    
-    <script src="behavior.js"></script>
-    <hr>
-    <h2>Dr Mean Dyna</h2>
-    <img height="30% "  width="20%" src="https://z-p3-scontent.fpnh18-1.fna.fbcdn.net/v/t1.0-9/49682493_1988112684818529_7787589122914254848_n.jpg?_nc_cat=104&_nc_sid=09cbfe&_nc_eui2=AeFWCwFmh4P25K0wNDldahs5ahm5MrMWXydqGbkysxZfJ6wHU3PwecbVCtowQRvvXLK-M6O_WUkqFt7HpIcErLk1&_nc_ohc=Di6pmZIpVLIAX93QE4p&_nc_ht=z-p3-scontent.fpnh18-1.fna&oh=7ee7a697d86bded19e6e0665e608255b&oe=5FB18F5A">
-     <h2>Language</h2>
-    <ol type="A">
-        <li> Java</li>
-        <li> Python</li>
-        <li> Ruby</li>
-    </ol>
-    <a href="HTML_PAGE\Page2.html"> Click To page 2</a>
-   
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand " href="https://www.google.com">CODE TODAY</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Program Language <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">JAVA</a></li>
+                        <li><a href="#">Phyton </a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">C++</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Engineering <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                         <li><a href="#">Electrical Engineering</a></li>
+                         <li><a href="#">Electrinic Engineering</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="HTML_PAGE\signInForm.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Bordered Table</h2>
+        <p>The .table-bordered class adds borders on all sides of the table and the cells:</p>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Modal Example</h2>
+        <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Open modal
+        </button>
+        
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+        
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        Modal body..
+                    </div>
+        
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
